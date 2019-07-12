@@ -21,9 +21,8 @@
 # lines, AOSP and STX, hence its name.
 #
 
-# Include STX common configurations
-include vendor/statix/config/common.mk
-include vendor/statix/config/gsm.mk
+# Include descendant common configurations
+include vendor/descendant/config/common_full_phone.mk
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/google/bonito/aosp_bonito.mk)
@@ -32,7 +31,7 @@ $(call inherit-product, device/google/bonito/aosp_bonito.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
-PRODUCT_NAME := statix_bonito
+PRODUCT_NAME := descendant_bonito
 PRODUCT_DEVICE := bonito
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Pixel 3a XL
@@ -44,4 +43,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="bonito-user 9 PQ3B.190705.003 5622519 release-keys"
 
 $(call inherit-product-if-exists, vendor/google/bonito/bonito-vendor.mk)
-$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
+#$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
