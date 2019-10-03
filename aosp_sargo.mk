@@ -39,6 +39,18 @@ PRODUCT_NAME := aosp_sargo
 PRODUCT_DEVICE := sargo
 PRODUCT_MODEL := AOSP on sargo
 
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME="sargo" \
+    TARGET_DEVICE="sargo" \
+    PRIVATE_BUILD_DESC="sargo-user 10 QP1A.190711.020.C3 5869620 release-keys"
+
+BUILD_FINGERPRINT := google/sargo/sargo:10/QP1A.190711.020.C3/5869620:user/release-keys
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.fingerprint=google/sargo/sargo:10/QP1A.190711.020.C3/5869620:user/release-keys
+
 PRODUCT_COPY_FILES += \
     device/sample/etc/apns-full-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml \
     $(LOCAL_PATH)/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
+
+$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
+$(call inherit-product-if-exists, vendor/google/bonito/bonito-vendor.mk)
