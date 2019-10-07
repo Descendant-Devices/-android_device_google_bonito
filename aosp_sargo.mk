@@ -48,10 +48,6 @@ BUILD_FINGERPRINT := google/sargo/sargo:10/QP1A.190711.020.C3/5869620:user/relea
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=google/sargo/sargo:10/QP1A.190711.020.C3/5869620:user/release-keys
 
-# whitelist packages for location providers not in system
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.services.whitelist.packagelist=com.google.android.gms
-
 PRODUCT_COPY_FILES += \
     device/sample/etc/apns-full-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml \
     $(LOCAL_PATH)/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
