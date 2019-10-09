@@ -42,11 +42,11 @@ PRODUCT_MODEL := AOSP on sargo
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="sargo" \
     TARGET_DEVICE="sargo" \
-    PRIVATE_BUILD_DESC="sargo-user 10 QP1A.190711.020.C3 5869620 release-keys"
+    PRIVATE_BUILD_DESC="sargo-user 10 QP1A.191005.007 5878874 release-keys"
 
-BUILD_FINGERPRINT := google/sargo/sargo:10/QP1A.190711.020.C3/5869620:user/release-keys
+BUILD_FINGERPRINT := google/sargo/sargo:10/QP1A.191005.007/5878874:user/release-keys
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint=google/sargo/sargo:10/QP1A.190711.020.C3/5869620:user/release-keys
+    ro.build.fingerprint=google/sargo/sargo:10/QP1A.191005.007/5878874:user/release-keys
 
 # whitelist packages for location providers not in system
 PRODUCT_PROPERTY_OVERRIDES += \
