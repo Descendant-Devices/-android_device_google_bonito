@@ -20,6 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/mainline.mk)
 
 $(call inherit-product, device/google/bonito/device-sargo.mk)
 $(call inherit-product-if-exists, vendor/google_devices/bonito/proprietary/device-vendor.mk)
+$(call inherit-product-if-exists, vendor/descendant/config/common.mk)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=Ring_Synth_04.ogg \
