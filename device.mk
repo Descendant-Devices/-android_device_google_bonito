@@ -113,7 +113,9 @@ endif
 #per device
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/bonito/init.bonito.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.bonito.rc \
+    $(LOCAL_PATH)/sargo/init.sargo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.sargo.rc \
     $(LOCAL_PATH)/init.recovery.hardware.device.rc:recovery/root/init.recovery.bonito.rc \
+    $(LOCAL_PATH)/init.recovery.hardware.device.rc:recovery/root/init.recovery.sargo.rc \
 
 MSM_VIDC_TARGET_LIST := sdm710 # Get the color format from kernel headers
 MASTER_SIDE_CP_TARGET_LIST := sdm710 # ION specific settings

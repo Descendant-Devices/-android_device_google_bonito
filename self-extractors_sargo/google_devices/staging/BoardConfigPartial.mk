@@ -1,5 +1,4 @@
-#
-# Copyright 2015 The Android Open Source Project
+# Copyright 2018 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,10 +11,13 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_bonito.mk \
-    $(LOCAL_DIR)/aosip_bonito.mk \
-    $(LOCAL_DIR)/aosp_sargo.mk \
-    $(LOCAL_DIR)/aosip_sargo.mk
+BOARD_PREBUILT_VENDORIMAGE := vendor/google_devices/sargo/proprietary/vendor.img
+
+-include vendor/google/tools/android-info.mk
+ifdef USE_ANDROID_INFO
+  TARGET_BOARD_INFO_FILE := vendor/google_devices/sargo/android-info.txt
+endif
+
+AB_OTA_PARTITIONS += \
+    vendor

@@ -1,5 +1,4 @@
-#
-# Copyright 2015 The Android Open Source Project
+# Copyright 2018 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,10 +11,12 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_bonito.mk \
-    $(LOCAL_DIR)/aosip_bonito.mk \
-    $(LOCAL_DIR)/aosp_sargo.mk \
-    $(LOCAL_DIR)/aosip_sargo.mk
+ifneq ($(filter sargo,$(TARGET_DEVICE)),)
+LOCAL_STEM := sargo/BoardConfigPartial.mk
+else
+LOCAL_STEM := bonito/BoardConfigPartial.mk
+endif
+
+-include vendor/google_devices/$(LOCAL_STEM)
+-include vendor/qcom/$(LOCAL_STEM)
