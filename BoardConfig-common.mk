@@ -16,8 +16,6 @@
 
 include build/make/target/board/BoardConfigMainlineCommon.mk
 
-TEMPORARY_DISABLE_PATH_RESTRICTIONS := true
-
 TARGET_BOARD_PLATFORM := sdm710
 TARGET_BOARD_INFO_FILE := device/google/bonito/board-info.txt
 USES_DEVICE_GOOGLE_B4S4 := true

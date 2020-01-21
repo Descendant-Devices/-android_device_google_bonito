@@ -16,9 +16,9 @@
  },
  {
    "remote":      "gitlab",
-   "repository":  "DirtyUnicorns/android_vendor_images",
+   "repository":  "Skittles9823/android_vendor_images",
    "target_path": "vendor/images",
-   "branch":      "q10x"
+   "branch":      "q"
  },
  {
    "remote":      "gitlab",

@@ -38,7 +38,7 @@ BUILD_FINGERPRINT := "google/sargo/sargo:10/QQ1A.200105.002/6031801:user/release
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=google/sargo/sargo:10/QQ1A.200105.002/6031801:user/release-keys
 
-BOARD_PREBUILT_VENDORIMAGE := vendor/images/bonito/vendor.img
+BOARD_PREBUILT_VENDORIMAGE := vendor/images/sargo/vendor.img
 
 $(call inherit-product-if-exists, vendor/google/sargo/sargo-vendor.mk)
 $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
