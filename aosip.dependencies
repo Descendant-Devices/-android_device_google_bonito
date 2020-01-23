@@ -5,9 +5,9 @@
    "branch":      "q10x"
  },
  {
-   "repository":  "DirtyUnicorns/android_kernel_google_bluecross",
-   "target_path": "kernel/google/bluecross",
-   "branch":      "q10x"
+   "repository":  "Descendant-Devices/android_kernel_google_bonito",
+   "target_path": "kernel/google/bonito",
+   "branch":      "descendant-custom-q"
  },
  {
    "repository":  "DirtyUnicorns/android_vendor_google",
