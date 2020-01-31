@@ -10,9 +10,9 @@
    "branch":      "q10x"
  },
  {
-   "repository":  "DirtyUnicorns/android_vendor_google",
+   "repository":  "AOSiP-Devices/vendor_google",
    "target_path": "vendor/google",
-   "branch":      "q10x"
+   "branch":      "ten"
  },
  {
    "remote":      "gitlab",
