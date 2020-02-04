@@ -38,7 +38,6 @@ lib/android.hardware.secure_element@1.0.so
 lib/com.qualcomm.qti.imscmservice@1.0.so
 lib/com.qualcomm.qti.uceservice@2.0.so
 lib/com.quicinc.cne.server@1.0.so
-lib/dsp/elmyra.so
 lib/lib-imsvideocodec.so
 lib/lib-imsvt.so
 lib/lib-imsvtextutils.so
@@ -291,8 +290,8 @@ product/etc/res/images/charger/battery_fail.png
 product/etc/res/images/charger/battery_scale.png
 product/etc/res/images/charger/main_font.png
 product/etc/res/values/charger/animation.txt
-product/etc/sysconfig/pixel_2018_exclusive.xml
-product/etc/sysconfig/qti_whitelist.xml
+product/etc/sysconfig/pixel_2019_midyear_exclusive.xml
+product/etc/sysconfig/nexus.xml
 product/etc/sysconfig/tmo_grsu_sysconfig.xml
 product/etc/sysconfig/vzw_mvs_sysconfig.xml
 product/etc/sysconfig/whitelist_com.android.omadm.service.xml
@@ -305,7 +304,6 @@ product/lib/vendor.qti.hardware.qdutils_disp@1.0.so
 product/lib64/com.qualcomm.qti.ant@1.0.so
 product/lib64/libaptXHD_encoder.so
 product/lib64/libaptX_encoder.so
-product/lib64/libgdx.so
 product/lib64/libsecureuisvc_jni.so
 product/lib64/vendor.google.wifi_ext@1.0.so
 product/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
