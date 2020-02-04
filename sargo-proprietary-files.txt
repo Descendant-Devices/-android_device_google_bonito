@@ -38,7 +38,6 @@ lib/android.hardware.secure_element@1.0.so
 lib/com.qualcomm.qti.imscmservice@1.0.so
 lib/com.qualcomm.qti.uceservice@2.0.so
 lib/com.quicinc.cne.server@1.0.so
-lib/dsp/elmyra.so
 lib/lib-imsvideocodec.so
 lib/lib-imsvt.so
 lib/lib-imsvtextutils.so
@@ -305,7 +304,6 @@ product/lib/vendor.qti.hardware.qdutils_disp@1.0.so
 product/lib64/com.qualcomm.qti.ant@1.0.so
 product/lib64/libaptXHD_encoder.so
 product/lib64/libaptX_encoder.so
-product/lib64/libgdx.so
 product/lib64/libsecureuisvc_jni.so
 product/lib64/vendor.google.wifi_ext@1.0.so
 product/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
