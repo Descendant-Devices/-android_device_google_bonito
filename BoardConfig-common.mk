@@ -55,7 +55,7 @@ BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc/7c4000.sdhci
 TARGET_KERNEL_CLANG_COMPILE := true
 # TARGET_KERNEL_CLANG_VERSION := 10.0.1
 TARGET_KERNEL_SOURCE := kernel/google/bonito
-TARGET_KERNEL_CONFIG := bonito_defconfig
+TARGET_KERNEL_CONFIG := gulch_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.lz4
 TARGET_COMPILE_WITH_MSM_KERNEL := true
 
