@@ -1,5 +1,8 @@
 # Common board config for bonito, sargo
 
+# Ignore broken phony targets
+BUILD_BROKEN_PHONY_TARGETS := true
+
 # Build vendor image
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
