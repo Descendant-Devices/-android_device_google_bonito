@@ -29,7 +29,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Preopt SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI
+    SystemUIGoogle
 
 # RCS
 PRODUCT_PACKAGES += \
