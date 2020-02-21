@@ -20,4 +20,10 @@
          devices will be able to vary their amplitude but do not possess enough dynamic range to
          have distinct intensity levels -->
     <bool name="config_vibration_supports_multiple_intensities">false</bool>
+    <!-- Whether to display pixel gestures category -->
+    <bool name="is_pixel_device">true</bool>
+    <!-- Whether to display aware category -->
+    <bool name="has_aware">false</bool>
+    <!-- Whether to display active edge category -->
+    <bool name="has_active_edge">true</bool>
 </resources>
